@@ -1,5 +1,6 @@
 body{
-    background-color: #191919;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/imgback.jpg);
+    background-size: cover;
 }
 .btn{
     position: absolute;
@@ -26,7 +27,7 @@ body{
 .btn1{
     position: absolute;
     top: 48%;
-    left: 42.2%;
+    left: 42.3%;
     -webkit-transform: translate (-50%, -50%);
     color: #000;
     font-family: Arial;
@@ -47,8 +48,8 @@ body{
 }
 .btn2{
     position: absolute;
-    top: 60.7%;
-    left: 43.3%;
+    top: 60.8%;
+    left: 43.5%;
     -webkit-transform: translate (-50%, -50%);
     color: #000;
     font-family: Arial;
@@ -69,8 +70,8 @@ body{
 }
 .txt{
     position: absolute;
-    top: 19%;
-    left: 38%;
+    top: 24%;
+    left: 39.4%;
 }
 .text{
     font-size: 30px;
