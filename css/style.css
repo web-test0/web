@@ -51,4 +51,13 @@ ul li a:hover::before{
 }
 h1{
     color: aliceblue;
+    filter: drop-shadow(0 0 10px #fff);
+}
+footer {
+    display: flex;
+    color: #354343;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 15px;
 }
