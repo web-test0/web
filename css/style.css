@@ -1,7 +1,9 @@
 body{
     font-family: Karla, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 15px;
-    background-color: rgb(23, 23, 23);
+    background: rgb(38,38,38);
+    background: linear-gradient(90deg, rgba(38,38,38,1) 41%, rgb(29, 46, 27) 100%);
+    margin: 3%;
 }
 .inst{
     padding: 0 220px;
@@ -23,8 +25,6 @@ body{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-
-    margin: 0px;
     text-align:center;
 }
 * {
@@ -58,6 +58,10 @@ ul li a:hover{
     color: #767676;
     transition-delay: .02s;
 }
+ul li a:active {
+    color: #bebebe;
+    background-color: #4b4b4b;
+}
 ul {
     position: relative;
     display: flex;
@@ -65,7 +69,8 @@ ul {
     gap: 20px;
     padding: 50px;
     border-radius: 20px;
-    background-color: #2e2e2e;
+    background: rgb(54,54,54);
+    background: linear-gradient(90deg, rgba(54,54,54,1) 41%, rgba(46,57,44,1) 100%);
 }
 .photo {
     padding: 10px;
@@ -84,7 +89,7 @@ ul {
 }
 .name1{
     text-align:center;
-    padding: 0;
+
 }
 .name{
     font-size: 20px;
