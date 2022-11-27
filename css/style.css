@@ -2,7 +2,7 @@ body{
     font-family: Karla, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 15px;
     background: rgb(38,38,38);
-    background: linear-gradient(90deg, rgba(38,38,38,1) 41%, rgb(29, 46, 27) 100%);
+    background: linear-gradient(270deg, rgba(38,38,38,1) 41%, rgb(29, 46, 27) 100%);
     margin: 3%;
 }
 .inst{
@@ -70,7 +70,7 @@ ul {
     padding: 50px;
     border-radius: 20px;
     background: rgb(54,54,54);
-    background: linear-gradient(90deg, rgba(54,54,54,1) 41%, rgba(46,57,44,1) 100%);
+    background: linear-gradient(270deg, rgba(54,54,54,1) 41%, rgba(46,57,44,1) 100%);
 }
 .photo {
     padding: 10px;
