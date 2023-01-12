@@ -1,97 +1,67 @@
-body{
-    font-family: Karla, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 15px;
-    background: rgb(38,38,38);
-    background: linear-gradient(270deg, rgba(38,38,38,1) 41%, rgb(29, 46, 27) 100%);
-    margin: 3%;
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #eee;
 }
-.inst{
-    padding: 0 220px;
-}
-.tg{
-    padding: 0 223px;
-}
-.tt{
-    padding: 0 232px;
-}
-.sc{
-    padding: 0 211px;
-}
-.yt{
-    padding: 0 225px;
-}
-.container{
+.container {
     display: flex;
-    flex-flow: row wrap;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    text-align:center;
 }
-* {
-    box-sizing: border-box;
+td, th {
+    padding: 8px;
 }
-ul li{
-    position: relative;
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid rgb(41, 41, 41);
+}
+.tdcolor {
+    background-color: rgb(133, 201, 228);
+}
+.none {
+    background-color: rgb(165, 106, 106);
+}
+.main {
+    color: black;
+    text-align: center;
+}
+.text-color {
+    color: rgb(231, 248, 255);
+}
+.td-color-green {
+    background-color: rgb(59, 172, 84);
+}
+th {
+    color: black;
+}
+.ad-slverchuk ul {
     list-style: none;
+    padding: 10px;
 }
-ul li a{
-    display: inline-block;
-    box-sizing: border-box;
-    outline: none;
-    border: 2px solid #656565;
-    border-radius: 50px;
-    height: 58px;
-    line-height: 58px;
-    font-weight: 600;
-    text-decoration: none;
-    color: #e2e2e2;
-    background-color: #656565;
-    cursor: pointer;
-    user-select: none;
-    appearance: none;
-    vertical-align: top;
-    text-decoration: none;
-    transition: .2s;
-}
-ul li a:hover{
-    background-color: rgb(23, 23, 23);
-    color: #767676;
-    transition-delay: .02s;
-}
-ul li a:active {
-    color: #bebebe;
-    background-color: #4b4b4b;
-}
-ul {
-    position: relative;
+.ad-slverchuk {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 50px;
-    border-radius: 20px;
-    background: rgb(54,54,54);
-    background: linear-gradient(270deg, rgba(54,54,54,1) 41%, rgba(46,57,44,1) 100%);
+    justify-content: center;
+    align-items: center;
 }
-.photo {
+li {
+    display: inline;
     padding: 10px;
-    width: 125px;
-    height: 125px;
-    margin: 0 auto;
-    overflow: hidden;
 }
-
-.personPhoto {
-    border-radius: 50%;
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    margin: 0 auto;
+.ad-slverchuk img {
+    border-radius: 10px;
 }
-.name1{
-    text-align:center;
-
+.scale {
+    transition: 400ms;
 }
-.name{
-    font-size: 20px;
-    color: #e2e2e2;
+.scale:hover {
+    transform: scale(1.07);
+}
+.copyright {
+    padding-top:70px;
+    text-align: center;
+}
+.contacts {
+    margin: auto;
+    font-size: 25px;
+    padding-top: 20px;
 }
