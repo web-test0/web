@@ -1,13 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>IP</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Расписание</title>
 </head>
 <body>
-    <p id="location">Загрузка...</p>
+  <h1>Расписание МИТ-311</h1>
+  <table>
+    <tr>
+      <th>Время</th>
+      <th>Понедельник</th>
+      <th>Вторник</th>
+      <th>Среда</th>
+      <th>Четверг</th>
+      <th>Пятница</th>
+    </tr>
+    <tr>
+      <td>8:00 - 9:35</td>
+      <td>Аналогова і цифрова схемотехніка</td>
+      <td></td>
+      <td>Історія Ураїни<br>Вища математика</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9:45 - 11:20</td>
+      <td>Інформац.-вимір. сист. та комплекси</td>
+      <td>Безпека життєдіяльності</td>
+      <td>Аналогова і цифрова схемотехніка</td>
+      <td></td>
+      <td>Іноземна мова за професійним спрямуванням</td>
+    </tr>
+    <tr>
+      <td>11:50 - 13:25</td>
+      <td>Вища математика</td>
+      <td>Системи автоматиз. проєктування</td>
+      <td>Основи метрології, стандартиз., сертиф-ції та управлін. Якістю</td>
+      <td>Інформац.-вимір. сист. та комплекси</td>
+      <td>Основи метрології, стандартиз., сертиф-ції та управлін. якістю </td>
+    </tr>
+    <tr>
+      <td>13:35 - 15:10</td>
+      <td></td>
+      <td>Фізичне виховання</td>
+      <td>Іноземна мова за професійним спрямуванням</td>
+      <td>Фізичне виховання</td>
+      <td>Системи автоматиз. проєктування</td>
+    </tr>
+    <tr>
+      <td>13:35 - 15:10</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Вища математика</td>
+      <td></td>
+    </tr>
+  </table>
+  <h2>Информационный раздел</h2>
+  <ul>
+    <li>
+      <strong>Системи автоматиз. проєктування</strong><br>
+      Zoom-код: <span id="zoomCode">dha747n</span>
+      <button class="copy-button" onclick="copyToClipboard('dha747n')">
+        <i class="far fa-copy copy-icon"></i>
+      </button>
+      <span class="copied-text">Скопировано</span><br>
+      <a href="https://zoom.us/j/123456789">Присоединиться к занятию в Zoom</a>
+    </li>
+  </li>
+      <strong>В разработке</strong><br>
+      Zoom-код: В разработке<br>
+      <a href="https://zoom.us/j/987654321">Присоединиться к занятию в Zoom</a>
+    </li>
+    <!-- Добавьте аналогичные разделы для других дней и времен -->
+  </ul>
+
+  <script>
+    function copyToClipboard(text) {
+      var textarea = document.createElement("textarea");
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textarea);
+  
+      var copiedText = document.querySelector(".copied-text");
+      copiedText.classList.add("show");
+      setTimeout(function() {
+        copiedText.classList.remove("show");
+      }, 2000); // Через 2 секунды скрыть надпись "Скопировано"
+    }
+  </script>
 </body>
 </html>
