@@ -19,8 +19,12 @@ th, td {
   text-align: center;
 }
 
+td {
+  background-color: #d4fae3;
+}
+
 th {
-  background-color: #f2f2f2;
+  background-color: #dff2ff;
 }
 
 .copy-button {
@@ -65,4 +69,11 @@ a {
 
 a:hover {
   color: #2980b9;
+}
+
+.none-td {
+  background-color: #ffe8e8;
+}
+.time {
+  background-color: #dff2ff;
 }
