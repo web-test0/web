@@ -1,14 +1,20 @@
-body{
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+body {
+  font-family: Arial, sans-serif;
 }
+
+h1, h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 th, td {
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
 }
@@ -17,63 +23,46 @@ th {
   background-color: #f2f2f2;
 }
 
-h1 {
-  color: #333;
+.copy-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-h2 {
-  color: #555;
-  margin-top: 20px;
+.copy-button:hover {
+  transform: scale(1.1);
+}
+
+.copied-text {
+  display: none;
+  color: #27ae60;
+  font-size: 14px;
+  margin-left: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.copied-text.show {
+  display: inline;
+  opacity: 1;
 }
 
 ul {
   list-style-type: none;
-  padding-left: 0;
+  padding: 0;
 }
 
-li {
-  margin-bottom: 15px;
+ul li {
+  margin-bottom: 10px;
 }
-
-strong {
-  color: #333;
-}
-
 a {
-  color: #007bff;
+  color: #3498db;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  text-decoration: underline;
-}
-
-.copy-button {
-  border: none;
-  background: none;
-  cursor: pointer;
-  color: #007bff;
-  transition: color 0.3s, transform 0.3s, text-shadow 0.3s;
-}
-
-.copy-button:hover,
-.copy-button:active {
-  color: #0056b3;
-  transform: translateY(1px);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.copy-icon {
-  margin-right: 5px;
-}
-
-.copied-text {
-  color: #4caf50;
-  font-size: 14px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.copied-text.show {
-  opacity: 1;
+  color: #2980b9;
 }

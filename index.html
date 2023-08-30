@@ -63,34 +63,45 @@
   <ul>
     <li>
       <strong>Системи автоматиз. проєктування</strong><br>
-      Zoom-код: <span id="zoomCode">dha747n</span>
-      <button class="copy-button" onclick="copyToClipboard('dha747n')">
-        <i class="far fa-copy copy-icon"></i>
+      Classroom: <span id="zoomCode1">dha747n</span>
+      <button class="copy-button" onclick="copyToClipboard('zoomCode1', 'copiedText1')">
+        <i class="far fa-copy"></i>
       </button>
-      <span class="copied-text">Скопійовано</span><br>
+      <span class="copied-text" id="copiedText1">Скопійовано</span><br>
       <a href="https://zoom.us/j/123456789" target="_blank">Приєднатися до заняття в Zoom</a>
     </li>
-  </li>
-      <strong>В розробці</strong><br>
-      Zoom-код: В розробці<br>
-      <a href="https://zoom.us/j/987654321" target="_blank">Приєднатися до заняття в Zoom</a>
+    <li>
+      <strong>Іноземна мова за ПС</strong><br>
+      Classroom: <span id="zoomCode2">ja7asvn</span>
+      <button class="copy-button" onclick="copyToClipboard('zoomCode2', 'copiedText2')">
+        <i class="far fa-copy"></i>
+      </button>
+      <span class="copied-text" id="copiedText2">Скопійовано</span><br>
+      <a href="https://zoom.us/j/123456789" target="_blank">Приєднатися до заняття в Zoom</a>
     </li>
-    <!-- Добавьте аналогичные разделы для других дней и времен -->
   </ul>
 
   <script>
-    function copyToClipboard(text) {
-      var textarea = document.createElement("textarea");
-      textarea.value = text;
+    function copyToClipboard(elementId, copiedTextId) {
+      const textElement = document.getElementById(elementId);
+      const copiedTextElement = document.getElementById(copiedTextId);
+
+      const textToCopy = textElement.innerText;
+
+      const textarea = document.createElement('textarea');
+      textarea.value = textToCopy;
       document.body.appendChild(textarea);
       textarea.select();
-      document.execCommand("copy");
+      document.execCommand('copy');
       document.body.removeChild(textarea);
-  
-      var copiedText = document.querySelector(".copied-text");
-      copiedText.classList.add("show");
+
+      copiedTextElement.style.display = 'inline';
+      copiedTextElement.classList.add('show');
       setTimeout(function() {
-        copiedText.classList.remove("show");
+        copiedTextElement.classList.remove('show');
+        setTimeout(function() {
+          copiedTextElement.style.display = 'none';
+        }, 300);
       }, 2000);
     }
   </script>
