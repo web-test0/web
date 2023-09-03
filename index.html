@@ -60,10 +60,11 @@
     </tr>
   </table>
   <h2>Інформаційний розділ</h2>
+  <p class="info1">Classroom - Zoom</p>
   <ul>
     <li>
       <strong>Системи автоматиз. проєктування</strong><br>
-      Classroom: <span id="zoomCode1">dha747n</span>
+      <span  class="classroom1">Classroom:</span> <span id="zoomCode1">dha747n</span>
       <button class="copy-button" onclick="copyToClipboard('zoomCode1', 'copiedText1')">
         <i class="far fa-copy"></i>
       </button>
@@ -72,7 +73,7 @@
     </li>
     <li>
       <strong>Іноземна мова за ПС</strong><br>
-      Classroom: <span id="zoomCode2">ja7asvn</span>
+      <span  class="classroom1">Classroom:</span> <span id="zoomCode2">ja7asvn</span>
       <button class="copy-button" onclick="copyToClipboard('zoomCode2', 'copiedText2')">
         <i class="far fa-copy"></i>
       </button>
@@ -81,7 +82,7 @@
     </li>
     <li>
       <strong>Основи метрології, стандартизації, сертифікації та управління якістю</strong><br>
-      Classroom: <span id="zoomCode3">y2zkgcx</span>
+      <span  class="classroom1">Classroom:</span> <span id="zoomCode3">y2zkgcx</span>
       <button class="copy-button" onclick="copyToClipboard('zoomCode3', 'copiedText3')">
         <i class="far fa-copy"></i>
       </button>
@@ -90,7 +91,7 @@
     </li>
     <li>
       <strong>Інформац.-вимір. сист. та комплекси</strong><br>
-      Classroom: <span id="zoomCode4">4zaira7</span>
+      <span  class="classroom1">Classroom:</span> <span id="zoomCode4">4zaira7</span>
       <button class="copy-button" onclick="copyToClipboard('zoomCode4', 'copiedText4')">
         <i class="far fa-copy"></i>
       </button>
@@ -99,7 +100,7 @@
     </li>
     <li>
       <strong>Математика</strong><br>
-      Classroom: <span id="zoomCode5">ecirmc4</span>
+      <span  class="classroom1">Classroom:</span> <span id="zoomCode5">ecirmc4</span>
       <button class="copy-button" onclick="copyToClipboard('zoomCode5', 'copiedText5')">
         <i class="far fa-copy"></i>
       </button>
@@ -107,30 +108,6 @@
       <a href="https://us05web.zoom.us/j/9362646229?pwd=dDFYNEhJMXVLcEhPaW8vNnYxSk5vdz09" target="_blank">Приєднатися до заняття в Zoom</a>
     </li>
   </ul>
-
-  <script>
-    function copyToClipboard(elementId, copiedTextId) {
-      const textElement = document.getElementById(elementId);
-      const copiedTextElement = document.getElementById(copiedTextId);
-
-      const textToCopy = textElement.innerText;
-
-      const textarea = document.createElement('textarea');
-      textarea.value = textToCopy;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand('copy');
-      document.body.removeChild(textarea);
-
-      copiedTextElement.style.display = 'inline';
-      copiedTextElement.classList.add('show');
-      setTimeout(function() {
-        copiedTextElement.classList.remove('show');
-        setTimeout(function() {
-          copiedTextElement.style.display = 'none';
-        }, 300);
-      }, 2000);
-    }
-  </script>
 </body>
+<script src="js/script.js"></script>
 </html>
