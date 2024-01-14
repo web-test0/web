@@ -1,40 +1,48 @@
-body{
-    background-color: rgb(230, 255, 245);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 14px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+h2 {
+    text-align: center;
+    color: #007bff; /* цвет заголовка */
+}
+
 table {
+    text-align: center;
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
 th, td {
-    border: 1px solid rgb(133, 133, 133);
-    padding: 5px;
-    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #007bff; /* цвет заголовков столбцов */
+    color: white;
 }
 
-tr:nth-child(even) {
-    background-color: #f9f9f9;
+td {
+    background-color: #fff; /* цвет фона ячеек */
 }
-.td-none
-{
-    background-color: #ffdbdb;
+
+.td-none {
+    background-color: transparent !important;
 }
-.td-lessons, .td-day{
-    background-color: #c7c7c7;
+
+.td-day {
+    font-weight: bold;
 }
-.td-less{
-    background-color: rgb(187, 235, 202);
+
+.td-lessons {
+    font-size: 0.9em;
 }
-h2{
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-    color: #333333;
+
+.td-less {
+    padding-top: 10px;
 }
