@@ -7,7 +7,7 @@ body {
 }
 h2 {
     text-align: center;
-    color: #007bff; /* цвет заголовка */
+    color: #007bff;
 }
 
 table {
@@ -23,12 +23,12 @@ th, td {
 }
 
 th {
-    background-color: #007bff; /* цвет заголовков столбцов */
+    background-color: #007bff;
     color: white;
 }
 
 td {
-    background-color: #fff; /* цвет фона ячеек */
+    background-color: #fff;
 }
 
 .td-none {
